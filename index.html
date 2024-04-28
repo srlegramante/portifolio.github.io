@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
+    <link rel="shortcut icon" href="./img/minal_icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Menu Bar -->
+<nav>
+    <ul>
+        <li><a href="#"><button class="btn" onclick="showPopup('Como estudante de cibersegurança, estou constantemente imerso em um ambiente de aprendizado contínuo. Para mim, cada nova descoberta e desafio representa uma oportunidade de aprimorar minhas habilidades e expandir meu conhecimento. Sou apaixonado por explorar as complexidades do mundo digital e encontrar soluções para proteger sistemas e dados contra ameaças cibernéticas. ', 100, 100)">Sobre mim</button></a></li>
+        <li><a href="#"><button class="btn" onclick="showPopup('<h2>My skills!</h2>\n <h3>$ Python</h3>\n <h3>$ HTML & CSS</h3>\n <h3>$ Linux</h3>', 100, 100)">Minhas habilidades</button></a></li>
+    </ul>
+</nav>
+
+
+<!-- Pop-up -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <p id="popup-content"></p>
+    </div>
+</div>
+
+<!-- link js -->
+<script src="script.js"></script>
+
+<!-- Nome principal -->
+<header class="font">
+    <h1>E r i k  &nbsp;&nbsp;&nbsp; L e g r a m a n t e</h1>
+    <h2>CyberSecurity & Devlopment</h2>
+</header>
+
+<!-- Primeiro Conteúdo da pagina -->
+<main>
+
+<div class="centered-content">
+    <img src='./img/circle_person.gif' alt="Foto" class="rounded-image">
+</div>
+<br>
+
+
+<!--- Duas colunas, uma com a imagem do codigo e outra com redes sociais e 2 botões-->
+<div class="container">
+    <!-- Conteudo da direita -->
+    <div class="column">
+        <h1 class="archivo-black-regular">Olá!</h1>
+        <h2 class="archivo-black-regular">Sou um estudante em busca de <spam class="color">oportunidades.</spam></h2>
+        <h2 class="archivo-black-regular">Aberto a novos<spam class="color"> conhecimentos.</spam></h2>
+
+        <!-- redes sociais -->
+        <nav class="nav-redes">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/erik-legramante-120030214/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://github.com/srlegramante" target="_blank"><i class="fab fa-github">Github</i></a></li>
+                <li><a href="https://www.instagram.com/sr_legramante/" target="_blank"><i class="fab fa-instagram">Instagram</i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Imagem coluna da esquerda -->
+    <div class="column">
+        <div class="code-window">
+            <pre>
+                <code>
+                    <img src="./img/coluna2.png" alt="imagem codigo" class="code-window">
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+
+<!-- 3 colunas Projeto Tcc contexto, tecnologias usadas e imagens do projeto-->
+
+<!-- Contexto - Column 1-->
+<div class="container-tr">
+    <div class="column-tr" id="column1">
+        <h2>Projeto TCC curso Desenvolvimento de sistemas.</h2>
+
+        <p>Projeto TCC do curso de Desenvolvimento de Sistemas: Apoiando Microempreendedores. Nosso projeto visa auxiliar microempreendedores, 
+           proporcionando ferramentas e recursos para impulsionar seus negócios. 
+           Embora não tenhamos tido tempo suficiente devido à pandemia e outros imprevistos durante o curso, conseguimos estruturar o projeto de forma sólida e eficiente. 
+           <br><br>
+           Acompanhe ao lado mais detalhes sobre o projeto ou experimente-o em seu ambiente local.
+           Agradecemos pela compreensão e estou comprometido em continuar aprimorando e desenvolvendo soluções que beneficiem a comunidade empreendedora.</p>
+    </div>
+
+    <!-- Imagens - Column 2--> 
+    <div id="column2">
+        <h2>Design das páginas.</h2>
+        <div class="slideshow">
+            <ul class="slides">
+                <li><img src="./img_slides/chat.jpeg" alt="Imagem 2"></li>
+                <li><img src="./img_slides/main.jpeg" alt="Imagem 3"></li>
+                <li><img src="./img_slides/job.jpeg" alt="Imagem 4"></li>
+            </ul>
+        </div>
+        <br> <br> <br> <br>
+    </div>
+    
+    <!-- Tecnologias usadas - Column 3-->
+    <div class="column-tr" id="column3">
+        <h2>Tecnologias usadas</h2>
+        <img class="icon" src="./img/ts.png" alt="Imagem 1">
+        <img class="icon" src="./img/js.png" alt="Imagem 2">
+        <img class="icon" src="./img/html5.png" alt="Imagem 3">
+        <img class="icon" src="./img/css3.png" alt="Imagem 4">
+    </div>
+</div>
+
+</main>
+
+<br> <br> <br> <br>
+
+<!-- Rodapé -->
+<footer>
+    <p>&copy; 2024 Erik Legramante</p>
+</footer>
+
+</body>
+</html>
+

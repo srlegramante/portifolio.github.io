@@ -1,0 +1,419 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./img/wll.jpeg');
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+header {
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.0);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.font {
+  color: #ffffff;
+  padding-top: 90px;
+  font-family: "Poiret One", sans-serif;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.font h2 {
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.menu {
+  text-align: center;
+}
+
+/* Estilo para o pop-up */
+.popup {
+  display: none; 
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(51, 29, 29);
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  z-index: 999;
+}
+
+.popup-content {
+  text-align: left;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+}
+
+.close:hover {
+  color: #ccc;
+}
+
+.popup-content p {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.0);
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #301818;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+.rounded-image {
+  border-radius: 50%; 
+  width: 200px; 
+  height: 200px;
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/* colunas abaixo da imagem */
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.code-window {
+  padding: 10px;
+  max-height: 300px;
+  border-radius: 30px;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 32px;
+}
+
+.color {
+  color: #000000;
+}
+
+.nav-redes {
+  text-align: left;
+}
+
+.nav-redes ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-redes ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-redes ul li a {
+  color: #000000;
+}
+
+.nav-redes ul li {
+  font-size: 40px;
+  padding: 5px;
+}
+
+/* Colunas e slides */
+.container-tr {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.container-tr h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  padding: 30px;
+}
+
+.column-tr p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.column-tr {
+  flex: 1;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+/*Slides*/
+
+.slideshow {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.slides {
+  list-style: none;
+  position: relative;
+  width: 100%; 
+  height: 100%; 
+}
+
+.slides li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%; 
+  height: 100%;
+  animation: fade 12s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slides li:nth-child(1) {
+  animation-delay: 0s;
+}
+.slides li:nth-child(2) {
+  animation-delay: 4s;
+}
+.slides li:nth-child(3) {
+  animation-delay: 8s;
+}
+.slides li:nth-child(4) {
+  animation-delay: 12s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(-100%); 
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%); 
+  }
+}
+
+/*final slides*/
+
+#column1 h2 {
+  float: left;
+}
+
+#column1 p {
+  float: left;
+  width: 80%;
+  background-color: rgba(39, 27, 27, 0.096);
+  border-radius: 10px;
+  padding: 50px;
+}
+
+#column3 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#column3 img {
+  padding: 20x;
+  margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    background-image: url('./img/wallpapercell.jpg');
+    overflow-x: hidden;
+  }
+  
+  .font {
+    color: #ffffff;
+    padding-top: 90px;
+    font-size: 12px;
+  }
+  
+  .popup {
+    width: 200px;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 60px;
+    justify-content: center;
+    background-color: rgba(7, 4, 4, 0.856);
+  }
+  
+  .popup-content {
+    text-align: left;
+  }
+  
+  .container {
+    flex-basis: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .code-window {
+    max-height: 200px;
+    border-radius: 30px;
+    float: left;
+  }
+  
+  .container-tr {
+    display: block;
+    flex-wrap: wrap;
+  }
+  
+  .container-tr h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 25px;
+    padding: 5px;
+  }
+  
+  .column-tr p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .slideshow {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    float: left;
+  }
+  
+  .slides {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    float: left;
+  }
+  
+  .slides li {
+    float: left;
+    opacity: 0;
+    display: flex;
+    animation: fade 12s infinite;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+    25% {
+      opacity: 1;
+      transform: translateX(0); 
+    }
+    75% {
+      opacity: 1;
+      transform: translateX(-100%); 
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-100%); 
+    }
+  }
+
+  footer {
+    background-color: rgba(0, 0, 0, 0.0);
+    color: #000000;
+    float: left;
+    margin-right: 350px;
+}
+}
